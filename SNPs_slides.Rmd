@@ -1,0 +1,217 @@
+---
+title: "Do you have a moment to talk about SNPs?"
+subtitle: "Translating Polygenic Risk Assessment to the clinic"
+author: "James Morgan"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: custom.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(tidyverse)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+solarized_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css"
+)
+```
+
+.toc[
+# The story so far...
+
+## What's this all about?
+#### What is this project?
+#### What is a SNP?
+#### Who is this "James" guy anyway? 
+
+## Which SNPs and Why?
+### Trawling through the GWAS Catalog 
+
+## Polygen 
+### How are you going to do this anyway?
+]
+---
+class: inverse 
+
+# VCCC Precision Medicine Grant 
+
+> The development of a VCCC platform to assess the genomic risk of multiple cancers - towards the precision prevention of cancer
+
+
+```{r pillars,  dev='svg', eval=TRUE, include=FALSE}
+data <- tibble(
+    pillar = c("Sequence",
+               "Interpret",
+               "Report"),
+    val = c(1,1,1)
+) %>% 
+   mutate(pillar=factor(pillar, levels=pillar, ordered = TRUE)) 
+
+ggplot(
+    data = data,
+    aes(x=pillar, y=val, fill=pillar)
+) +
+    geom_bar(stat='identity') +
+    labs(x=NULL, y=NULL) +
+    # ggtitle("Three Pillars") +
+    theme(
+        plot.title = element_text(size=30, family = 'Serif', hjust=0.5),
+        axis.text.y = element_blank(),
+        axis.text.x = element_text(size=30),
+        axis.ticks = element_blank(),
+        panel.background = element_rect(fill = '#fdf6e3', colour = '#fdf6e3'),
+        plot.background = element_rect(fill = '#fdf6e3', colour = '#fdf6e3'),
+        legend.position = 'none'
+    )
+```
+
+
+.project-pillars-left[
+### Project Pillars
+* Flexible Genotyping Platform
+    
+* Standard guidelines for interpretation
+
+* Integrating PRS into the existing risk management landscape
+]
+
+.project-pillars-right[
+```{r pillars-display, echo=FALSE, out.width='100%'}
+knitr::include_graphics('SNPs_slides_files/figure-html/pillars-1.svg', dpi = NA)
+```
+]
+
+---
+class: inverse
+
+# VCCC Precision Medicine Grant: Sequencing 
+## Developing an optimal Genomic Risk platform
+
+.platform-left[
+
+### 1. Establish a research platform 
+Custom Illumina Microarray Chip 
+- 270,000 SNP Core
+
+Plus 600,000 SNPs identified by OncoArray Network contributors: 
+
+<ul>
+    <li title="Genetic Associations and Mechanisms in Oncology">GAME-ON</li>
+    <li title="Breast Cancer Association Consortium">BCAC</li>
+    <li title="Ovarian Cancer Association Consortium">OCAC</li>
+    <li title="Consortium of Investigators of Modifiers of BRCA1/2">CIMBA</li>
+</ul>
+
+.img-infinium[![](SNPs_slides_files/images/infinium.png)]
+
+]
+
+
+.platform-right[
+
+### 2. Assess requirements for clinical accreditation 
+
+![](SNPs_slides_files/images/nata.jpg)
+]
+
+---
+
+class: inverse
+
+# VCCC Precision Medicine Grant: Interpretation
+## Standardising Polygenic Risk Assessment
+
+.mcmahon-left[
+.mcmahon-meme[
+![](SNPs_slides_files/images/mcmahon-1.jfif)
+<p>BRCA Plus Panel</p><br />
+]
+]
+
+.mcmahon-right[
+.mcmahon-meme[
+![](SNPs_slides_files/images/mcmahon-2.jfif)
+<p>62 SNP iCOGS Breast Score (2015)<sup>1</sup></p>
+<p>0.619&lt;AUC&lt;0.627</p>
+]
+]
+
+.mcmahon-left[
+.mcmahon-meme[
+![](SNPs_slides_files/images/mcmahon-3.jfif)
+<p>313 SNP Score (2018)<sup>2</sup></p>
+<p>0.628&lt;AUC&lt;0.651</p>
+]
+]
+
+.mcmahon-right[
+.mcmahon-meme[
+![](SNPs_slides_files/images/mcmahon-4.jfif)
+<p>Clinically valid multi-cancer PRS informing management of high-risk variants & lifestyle factors (<em>2023?</em>)</p>
+]
+]
+
+---
+
+class: inverse
+
+# VCCC Precision Medicine Grant: Reporting
+## Using PRS in existing risk assessment processes
+
+---
+
+# A bit about me...
+
+.me-right[
+.mcmahon-meme[![](SNPs_slides_files/images/JM.jfif)]
+]
+
+.me-left[
+Background:
+* BSc (Genetics, Microbiology)
+* MPH (Epidemiology, Biostats, Global Health)
+* ?PhD 
+
+||
+-|-
+Self-taught Programmer | ![](SNPs_slides_files/images/python.png) | ![](SNPs_slides_files/images/R_logo.png)
+Thinks he can do Data Science |  ![](SNPs_slides_files/images/dsc.jfif) | .eqn[ $$p(X)=\beta\_{0}+\beta\_{1}X$$]
+Trying to be a Web Designer | ![](SNPs_slides_files/images/django.png) | ![](SNPs_slides_files/images/web.jfif)
+
+]
+
+---
+
+class: inverse
+
+# Genome Wide Association Catalog - Cancer
+
+---
+
+# References
+
+.footnote[
+[1] 62 SNPs
+
+[2] Mavaddat et al. Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. AJHG. 2019;104(1):21–34. Available from: https://doi.org/https://doi.org/10.1016/j.ajhg.2018.11.002
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+]
+
