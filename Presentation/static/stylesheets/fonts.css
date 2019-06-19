@@ -1,0 +1,25 @@
+/* yanone-kaffeesatz-regular - latin */
+@font-face {
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/yanone-kaffeesatz-v10-latin-regular.eot'); /* IE9 Compat Modes */
+        /*src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'),*/
+        src: url('../fonts/yanone-kaffeesatz-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/yanone-kaffeesatz-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/yanone-kaffeesatz-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/yanone-kaffeesatz-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/yanone-kaffeesatz-v10-latin-regular.svg#YanoneKaffeesatz') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('DroidSerif-Regular-webfont.eot');
+    src: url('DroidSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DroidSerif-Regular-webfont.woff2') format('woff2'),
+         url('DroidSerif-Regular-webfont.woff') format('woff'),
+         url('DroidSerif-Regular-webfont.ttf') format('truetype'),
+         url('DroidSerif-Regular-webfont.svg#droid_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -6,7 +6,8 @@ date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: custom.css
+    css: ['static/stylesheets/custom.css']
+    chakra: static/remark-latest.min.js
     nature:
       highlightStyle: github
       highlightLines: true
@@ -14,7 +15,11 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+options(
+  htmltools.dir.version = FALSE,
+  servr.host = '0.0.0.0',
+  servr.daemon = TRUE
+        )
 
 library(tidyverse)
 ```
@@ -31,9 +36,10 @@ solarized_dark(
 # The story so far...
 
 ## What's this all about?
-#### What is this project?
-#### What is a SNP?
-#### Who is this "James" guy anyway? 
+#### Elevator Pitch (and a few definitions)
+#### Project Summary
+<!-- #### What is a SNP? -->
+<!-- #### Who is this "James" guy anyway?  -->
 
 ## Which SNPs and Why?
 ### Trawling through the GWAS Catalog 
@@ -41,8 +47,56 @@ solarized_dark(
 ## Polygen 
 ### How are you going to do this anyway?
 ]
+
 ---
-class: inverse 
+
+class: inverse
+
+# Elevator Pitch
+
+### Problem: 
+> &raquo; Billions of dollars worth of burden to the health system.
+
+- Annual cancer burden *~65,000 diagnoses, ~12,500 deaths*
+  + Breast, Colorectal & Prostate cancer + Melanoma
+- Current estimation of cancer risk methods are Blunt/Inadequate 
+  + Most affected individuals have no significant FHx
+  
+
+
+### Proposed Solution: 
+> &raquo; Personalised Genomic Risk Assessment Platform
+
+- Roadmap to a cost-effective reduction in cancer-related disease burden.
+
+- Risk/Evidence-based screening
+  + Identify high-risk individuals through **SNP Genotyping**
+  + Precise estimation & standard interpretation of <br>**Polygenic Risk (PRS)**
+
+---
+
+# What are these acronyms?
+
+### SNP - Single Nucleotide Polymorphism
+
+- Common genomic variation contributes to cancer risk.
+
+- Individual SNPs contribute a near-negiligible risk.
+
+- Combined risk-contribution may be greater than any other single factor.
+
+
+### PRS - Polygenic Risk Score 
+
+- Quantifies combined SNP-associated risk
+
+- Various derivation methods
+
+- Demonstrated ability to improve performance of existing risk assessment methods
+
+
+---
+class: inverse
 
 # VCCC Precision Medicine Grant 
 
@@ -113,7 +167,7 @@ Plus 600,000 SNPs identified by OncoArray Network contributors:
     <li title="Consortium of Investigators of Modifiers of BRCA1/2">CIMBA</li>
 </ul>
 
-.img-infinium[![](SNPs_slides_files/images/infinium.png)]
+.img-infinium[![](static/images/infinium.png)]
 
 ]
 
@@ -122,7 +176,7 @@ Plus 600,000 SNPs identified by OncoArray Network contributors:
 
 ### 2. Assess requirements for clinical accreditation 
 
-![](SNPs_slides_files/images/nata.jpg)
+![](static/images/nata.jpg)
 ]
 
 ---
@@ -134,14 +188,14 @@ class: inverse
 
 .mcmahon-left[
 .mcmahon-meme[
-![](SNPs_slides_files/images/mcmahon-1.jfif)
+![](static/images/mcmahon-1.jfif)
 <p>BRCA Plus Panel</p><br />
 ]
 ]
 
 .mcmahon-right[
 .mcmahon-meme[
-![](SNPs_slides_files/images/mcmahon-2.jfif)
+![](static/images/mcmahon-2.jfif)
 <p>62 SNP iCOGS Breast Score (2015)<sup>1</sup></p>
 <p>0.619&lt;AUC&lt;0.627</p>
 ]
@@ -149,7 +203,7 @@ class: inverse
 
 .mcmahon-left[
 .mcmahon-meme[
-![](SNPs_slides_files/images/mcmahon-3.jfif)
+![](static/images/mcmahon-3.jfif)
 <p>313 SNP Score (2018)<sup>2</sup></p>
 <p>0.628&lt;AUC&lt;0.651</p>
 ]
@@ -157,7 +211,7 @@ class: inverse
 
 .mcmahon-right[
 .mcmahon-meme[
-![](SNPs_slides_files/images/mcmahon-4.jfif)
+![](static/images/mcmahon-4.jfif)
 <p>Clinically valid multi-cancer PRS informing management of high-risk variants & lifestyle factors (<em>2023?</em>)</p>
 ]
 ]
@@ -174,7 +228,7 @@ class: inverse
 # A bit about me...
 
 .me-right[
-.mcmahon-meme[![](SNPs_slides_files/images/JM.jfif)]
+.mcmahon-meme[![](static/images/JM.jfif)]
 ]
 
 .me-left[
@@ -185,9 +239,9 @@ Background:
 
 ||
 -|-
-Self-taught Programmer | ![](SNPs_slides_files/images/python.png) | ![](SNPs_slides_files/images/R_logo.png)
-Thinks he can do Data Science |  ![](SNPs_slides_files/images/dsc.jfif) | .eqn[ $$p(X)=\beta\_{0}+\beta\_{1}X$$]
-Trying to be a Web Designer | ![](SNPs_slides_files/images/django.png) | ![](SNPs_slides_files/images/web.jfif)
+Self-taught Programmer | ![](static)/images/python.png) | ![](static/images/R_logo.png)
+Thinks he can do Data Science |  ![](static)/images/dsc.jfif) | .eqn[ $$p(X)=\beta\_{0}+\beta\_{1}X$$]
+Trying to be a Web Designer | ![](static)/images/django.png) | ![](static/images/web.jfif)
 
 ]
 

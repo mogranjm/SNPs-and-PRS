@@ -18,7 +18,7 @@
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url(https://cdn.rawgit.com/tonsky/firacode/0.204/distr/fira_code.css);
 
 
 body {
@@ -34,9 +34,6 @@ h1, h2, h3 {
 .remark-slide-content {
   background-color: #002b36;
   font-size: 20px;
-  
-  
-  
   padding: 1em 4em 1em 4em;
 }
 .remark-slide-content h1 {
@@ -47,6 +44,16 @@ h1, h2, h3 {
 }
 .remark-slide-content h3 {
     font-size: 35px;
+    margin-bottom: 0;
+}
+.remark-slide-content p {
+    margin: 5px;
+}
+.remark-slide-content ul {
+    margin: 5px;
+}
+.remark-slide-content li {
+    margin-top: 5px;
 }
 .remark-code, .remark-inline-code {
   font-family: 'Fira Code', 'Lucida Console', Monaco, monospace;
