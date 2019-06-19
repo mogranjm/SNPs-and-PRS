@@ -103,7 +103,7 @@ class: inverse
 > The development of a VCCC platform to assess the genomic risk of multiple cancers - towards the precision prevention of cancer
 
 
-```{r pillars,  dev='png', eval=TRUE, include=FALSE}
+```{r pillars,  dev='svg', eval=TRUE, include=FALSE}
 data <- tibble(
     pillar = c("Sequence",
                "Interpret",
@@ -129,7 +129,7 @@ ggplot(
         legend.position = 'none'
     )
 
-ggsave('presentation_files/figure-html/pillars-1.png')
+ggsave('presentation_files/figure-html/pillars-1.svg')
 ```
 
 
@@ -144,7 +144,7 @@ ggsave('presentation_files/figure-html/pillars-1.png')
 
 .project-pillars-right[
 ```{r pillars-display, echo=FALSE, out.width='100%'}
-knitr::include_graphics('presentation_files/figure-html/pillars-1.png', dpi = NA)
+knitr::include_graphics('presentation_files/figure-html/pillars-1.svg', dpi = NA)
 ```
 ]
 
