@@ -144,7 +144,7 @@ ggsave('presentation_files/figure-html/pillars-1.png')
 
 .project-pillars-right[
 ```{r pillars-display, echo=FALSE, out.width='100%'}
-knitr::include_graphics('presentation_files/figure-html/pillars-1.svg', dpi = NA)
+knitr::include_graphics('presentation_files/figure-html/pillars-1.png', dpi = NA)
 ```
 ]
 
