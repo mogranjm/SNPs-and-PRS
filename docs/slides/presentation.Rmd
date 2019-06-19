@@ -198,7 +198,7 @@ class: inverse
 .mcmahon-right[
 .mcmahon-meme[
 ![](static/images/mcmahon-2.jfif)
-<p>62 SNP iCOGS Breast Score (2015)<sup>1</sup></p>
+<p>77 SNP Breast Score (2015)<sup>1</sup></p>
 <p>0.619&lt;AUC&lt;0.627</p>
 ]
 ]
@@ -206,7 +206,7 @@ class: inverse
 .mcmahon-left[
 .mcmahon-meme[
 ![](static/images/mcmahon-3.jfif)
-<p>313 SNP Score (2018)<sup>2</sup></p>
+<p>313 SNP Breast & Subtype Score (2018)<sup>2</sup></p>
 <p>0.628&lt;AUC&lt;0.651</p>
 ]
 ]
@@ -220,54 +220,37 @@ class: inverse
 
 ---
 
-class: inverse
+<!-- class: inverse -->
 
-# VCCC Precision Medicine Grant: Reporting
-## Using PRS in existing risk assessment processes
+<!-- # VCCC Precision Medicine Grant: Reporting -->
+<!-- ## Using PRS in existing risk assessment processes -->
 
----
-
-# A bit about me...
-
-.me-right[
-.mcmahon-meme[![](static/images/JM.jfif)]
-]
-
-.me-left[
-Background:
-* BSc (Genetics, Microbiology)
-* MPH (Epidemiology, Biostats, Global Health)
-* ?PhD 
-
-||
--|-
-Self-taught Programmer | ![](static)/images/python.png) | ![](static/images/R_logo.png)
-Thinks he can do Data Science |  ![](static)/images/dsc.jfif) | .eqn[ $$p(X)=\beta\_{0}+\beta\_{1}X$$]
-Trying to be a Web Designer | ![](static)/images/django.png) | ![](static/images/web.jfif)
-
-]
+<!-- --- -->
 
 ---
 
 class: inverse
 
-# Genome Wide Association Catalog - Cancer
+# Genome Wide Association Studies
+
+![](static/images/Manhattan_Plot.png)
+
+.footnote[
+Source: Ikram MK <em>et al.</em> (2010) Available from: https://doi.org/10.1371/journal.pgen.1001184.g001
+]
+
+---
+
+# Polygen
+[Web-link](http://115.146.85.122/)
 
 ---
 
 # References
 
 .footnote[
-[1] 62 SNPs
+[1] Mavaddat <em>et al.</em> (2015) Prediction of breast cancer risk based on profiling with common genetic variants. J Natl Cancer Inst. 2015 Apr 8;107(5). Available from: https://doi.org/10.1093/jnci/djv036. Print 2015 May.
 
-[2] Mavaddat et al. Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. AJHG. 2019;104(1):21–34. Available from: https://doi.org/https://doi.org/10.1016/j.ajhg.2018.11.002
-
-[3]
-
-[4]
-
-[5]
-
-[6]
+[2] Mavaddat <em>et al.</em> Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. AJHG. 2019;104(1):21–34. Available from: https://doi.org/10.1016/j.ajhg.2018.11.002
 ]
 
