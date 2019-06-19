@@ -279,44 +279,9 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
     height: 150px;
 }
 
-.me-left{
-    float: left;
-    width: 73%;
+.img-shell img{
+    height: 500px;
 }
-
-.me-left {
-    border-style: none;
-    background-color: #002b36;
-}
-
-.me-left table {
-    border-color: #002b36;
-    position: absolute;
-    top: 15em;
-    left: 4em;
-}
-
-.me-left img{
-    width: 75px;
-}
-
-.me-left table thead{
-    opacity: 0;
-}
-
-.me-left table thead tr th{
-    opacity:0;
-}
-
-.me-left table tbody tr td:last img{
-    margin-left: 1em;
-}
-
-.me-left tr:nth-child(even){
-    background: #002b36;
-}
-
-
 
 .eqn{
     color: #b58900;
