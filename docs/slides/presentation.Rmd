@@ -83,7 +83,6 @@ class: inverse
 
 - Combined risk-contribution may be greater than any other single factor.
 
-
 ### PRS - Polygenic Risk Score 
 
 - Quantifies combined SNP-associated risk
@@ -229,9 +228,8 @@ class: inverse
 
 # References
 
-.footnote[
-[1] Mavaddat <em>et al.</em> (2015) Prediction of breast cancer risk based on profiling with common genetic variants. J Natl Cancer Inst. 2015 Apr 8;107(5). Available from: https://doi.org/10.1093/jnci/djv036. Print 2015 May.
+1. Mavaddat <em>et al.</em> (2015) Prediction of breast cancer risk based on profiling with common genetic variants. J Natl Cancer Inst. 2015 Apr 8;107(5). Available from: https://doi.org/10.1093/jnci/djv036. Print 2015 May.
 
-[2] Mavaddat <em>et al.</em> Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. AJHG. 2019;104(1):21–34. Available from: https://doi.org/10.1016/j.ajhg.2018.11.002
-]
+2. Mavaddat <em>et al.</em> Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. AJHG. 2019;104(1):21–34. Available from: https://doi.org/10.1016/j.ajhg.2018.11.002
+
 
