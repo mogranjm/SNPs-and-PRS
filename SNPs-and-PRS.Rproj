@@ -9,5 +9,7 @@ UseSpacesForTab: Yes
 NumSpacesForTab: 4
 Encoding: UTF-8
 
-RnwWeave: Sweave
-LaTeX: XeLaTeX
+RnwWeave: knitr
+LaTeX: pdfLaTeX
+
+AutoAppendNewline: Yes
