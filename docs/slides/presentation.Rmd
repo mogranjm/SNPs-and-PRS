@@ -102,7 +102,7 @@ class: inverse
 
 > The development of a VCCC platform to assess the genomic risk of multiple cancers - towards the precision prevention of cancer
 
-
+<br>
 ```{r pillars,  dev='svg', eval=TRUE, include=FALSE}
 data <- tibble(
     pillar = c("Sequence",
@@ -135,10 +135,13 @@ ggsave('presentation_files/figure-html/pillars-1.svg')
 
 .project-pillars-left[
 ### Project Pillars
+<br>
 * Flexible Genotyping Platform
-    
+
+<br>
 * Standard guidelines for interpretation
 
+<br>
 * Integrating PRS into the existing risk management landscape
 ]
 
@@ -178,6 +181,7 @@ Plus 600,000 SNPs identified by OncoArray Network contributors:
 
 ### 2. Assess requirements for clinical accreditation 
 
+<br><br>
 ![](static/images/nata.jpg)
 ]
 
@@ -220,33 +224,9 @@ class: inverse
 
 ---
 
-<!-- class: inverse -->
-
-<!-- # VCCC Precision Medicine Grant: Reporting -->
-<!-- ## Using PRS in existing risk assessment processes -->
-
-<!-- --- -->
-
----
-
-class: inverse
-
-# Genome Wide Association Studies
-
-![](static/images/Manhattan_Plot.png)
-
-.footnote[
-Source: Ikram MK <em>et al.</em> (2010) Available from: https://doi.org/10.1371/journal.pgen.1001184.g001
-]
-
----
-
 # Polygen
-[Web-link](http://115.146.85.122/)
+<a href="http://115.146.85.122/"><img src="static/images/ssh_polygen.png"></a>
 
-.img-shell[
-![](static/images/ssh_polygen.png)
-]
 ---
 
 # References
