@@ -55,24 +55,22 @@ class: inverse
 # Elevator Pitch
 
 ### Problem: 
-> &raquo; Billions of dollars worth of burden to the health system.
+> &raquo; Cancer causes billions of dollars in health burden to the health system.
 
 - Annual cancer burden *~65,000 diagnoses, ~12,500 deaths*
   + Breast, Colorectal & Prostate cancer + Melanoma
 - Current estimation of cancer risk methods are Blunt/Inadequate 
   + Most affected individuals have no significant FHx
   
-
-
 ### Proposed Solution: 
 > &raquo; Personalised Genomic Risk Assessment Platform
 
 - Roadmap to a cost-effective reduction in cancer-related disease burden.
 
-- Risk/Evidence-based screening
-  + Identify high-risk individuals through **SNP Genotyping**
-  + Precise estimation & standard interpretation of <br>**Polygenic Risk (PRS)**
-
+- Personalised screening recommendations
+    + Identify high-risk individuals through **SNP Genotyping**
+    + Precise estimation of **Polygenic Risk (PRS)**
+    + (and guidelines for its interpretation)
 ---
 
 # What are these acronyms?
