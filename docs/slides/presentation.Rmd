@@ -38,11 +38,6 @@ solarized_dark(
 ## What's this all about?
 #### Elevator Pitch (and a few definitions)
 #### Project Summary
-<!-- #### What is a SNP? -->
-<!-- #### Who is this "James" guy anyway?  -->
-
-## Which SNPs and Why?
-### Trawling through the GWAS Catalog 
 
 ## Polygen 
 ### How are you going to do this anyway?
